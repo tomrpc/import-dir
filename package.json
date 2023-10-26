@@ -1,0 +1,32 @@
+{
+  "name": "@tomrpc/import-dir",
+  "description": "Helper to import() directories.",
+  "version": "1.2.0",
+  "type": "module",
+  "author": "npmstudy <npmstudy@qq.com>",
+  "main": "./index.js",
+  "exports": "./index.js",
+  "license": "MIT",
+  "dependencies": {
+    "desm": "^1.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.3.3",
+    "ts-node": "^1.3.0",
+    "typescript": "^1.8.0"
+  },
+  "engines": {
+    "node": ">= 12.17.0"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "homepage": "https://github.com/npmstudy/import-dir",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/npmstudy/import-dir.git"
+  }
+}
