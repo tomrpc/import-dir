@@ -10,7 +10,7 @@ import { dirname, filename, join } from "desm";
 // require(), so important: we clear the require() cache each time!
 // var parent = module.parent;
 var parentFile = import.meta.url;
-var parentDir = dirname(import.meta.url);
+// var parentDir = dirname(import.meta.url);
 // delete require.cache[__filename];
 
 export default async function importDir(dir, opts) {
@@ -19,7 +19,7 @@ export default async function importDir(dir, opts) {
   opts = opts || {};
 
   // resolve the path to an absolute one:
-  dir = path.resolve(parentDir, dir);
+  dir = path.resolve(dir);
 
   // read the directory's files:
   // note that this'll throw an error if the path isn't a directory.
