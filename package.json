@@ -1,7 +1,7 @@
 {
   "name": "@tomrpc/import-dir",
   "description": "Helper to import() directories.",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "type": "module",
   "author": "npmstudy <npmstudy@qq.com>",
   "main": "./index.js",
