@@ -43,15 +43,15 @@ npm install @tomrpc/import-dir
 Basic usage that examines only directories' immediate files:
 
 ```js
-const importDir import '@tomrpc/import-dir';
+const importDir,{join} import '@tomrpc/import-dir';
 
-var dir = await importDir('./path/to/dir');
+const dir = await importDir(join(import.meta.url, './path/to/dir'));
 ```
 
 You can optionally customize the behavior by passing an extra options object:
 
 ```js
-var dir = await importDir('./path/to/dir', { recurse: true });
+const dir = await importDir(join(import.meta.url, './path/to/dir'), { recurse: true });
 ```
 
 ## Options
