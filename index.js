@@ -3,13 +3,14 @@
 
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { dirname, filename, join } from "desm";
+import { filename } from "desm";
+export * from "desm";
 
 // make a note of the calling file's path, so that we can resolve relative
 // paths. this only works if a fresh version of this module is run on every
 // require(), so important: we clear the require() cache each time!
 // var parent = module.parent;
-var parentFile = import.meta.url;
+var parentFile = filename(import.meta.url);
 // var parentDir = dirname(import.meta.url);
 // delete require.cache[__filename];
 
