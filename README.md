@@ -3,8 +3,8 @@
 
 # importDir()
 
-Node helper to `require()` directories. The directory's files are examined,
-and each one that can be `require()`'d is `require()`'d and returned as part
+Node helper to `import()` directories. The directory's files are examined,
+and each one that can be `import()`'d is `import()`'d and returned as part
 of a hash from that file's basename to its exported contents.
 
 ## Example
@@ -23,8 +23,8 @@ dir
 
 ```js
 {
-  a: require('./dir/a.js'),
-  b: require('./dir/b.json')
+  a: await import('./dir/a.js'),
+  b: await import('./dir/b.json')
 }
 ```
 
